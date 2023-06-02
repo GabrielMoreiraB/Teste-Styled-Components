@@ -20,7 +20,13 @@ const StyledButton = styled.button<TStyledButtonProps>`
   border: 2px solid black;
   margin: 0 8px;
   padding: 8px 16px;
-  cursor: pointer;
+
+  :hover{
+    cursor: pointer;
+    background: #ecebeb;
+    transition: .5s;
+  }
+
   ${(props)=> {
     if(props.varient === "success"){
       return css`
